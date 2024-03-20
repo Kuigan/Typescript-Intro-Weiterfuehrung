@@ -9,7 +9,7 @@ Typescript bringe einige Vorteile mit sich:
 - bringt eigene Features mit sich (Generics, Types, etc.)
 
 ## Installation
-Um Typescript nutzen zu können, empfiehlt es sich (Node.js)[https://nodejs.org/en] herunterzuladen, um damit auf dem Node-Package-Manager (npm) zugreifen zu können.
+Um Typescript nutzen zu können, empfiehlt es sich [Node.js](https://nodejs.org/en) herunterzuladen, um damit auf dem Node-Package-Manager (npm) zugreifen zu können.
 Nach vollständiger Installaltion von Node.js und npm kann Typescripüt global auf unserem Computer mittels ```npm i -g typescript``` installiert werden. (Achtung! Dieser Weg KANN in ferner Zukunft zu Problemen führen. Behalte im Kopf, dass wir Typescript global installiert haben!)
 
 Weiterhin benötigen wir Visual Studio Code und eine Erweiterung namens "Live Server" von Ritwick Dey.
