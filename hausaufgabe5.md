@@ -12,6 +12,16 @@
 ### Aufgabe 2: Praxis: Typen hinzufügen (5 Punkte je Funktion --> 55 Punkte)
 
 **Ziel**: Vervollständige die folgenden Funktionen, indem du die Typen für die jeweiligen Parameter und den Rückgabewert angibst. Die Funktionen sind von der gestrigen Hausaufgabe.
+Folgende Datentypen wirst du so oder in ähnlicher Art benötigen benötigen:
+- number --> Zahl
+- string --> Zeichenkette
+- boolean --> true/false
+- number[] --> Array von Zahlen
+- string[] --> Array von Zeihenketten
+- void --> keine Rückgabewert
+- object --> object
+- {schlüssel: string, wert: number} --> ein Objekt mit der angegebenen Signatur
+
 
 Hier ein kleines Beispiel:
 
