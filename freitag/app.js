@@ -16,15 +16,24 @@ var form1 = document.querySelector('form');
 // Wenn das Event ausgelöst wird, dann lesen wir den Wert
 // aus der Eingabe aus und geben sie aus.
 var obst = document.getElementsByName('obst');
+var groesse = document.getElementById('groesse');
 form.addEventListener('submit', function (e) {
     // preventDefault verhindert das automatische
     // neuladen der kompletten Seite
     e.preventDefault();
     console.log(farbenInput.value);
+    console.log(groesse.value);
     // const obst1 = obst[1] as HTMLInputElement
     // console.log(obst1.value, obst1.checked)
+    var angewähltesObst = [];
     for (var i = 0; i < obst.length; i = i + 1 /* i++ ODER i += 1 */) {
         var aktuellesObst = obst[i];
         console.log(aktuellesObst.value, aktuellesObst.checked);
     }
+    obst.forEach(function (aktuellesObst) {
+        if (aktuellesObst.checked === true) {
+            angewähltesObst.push(aktuellesObst.value);
+        }
+    });
+    console.log(angewähltesObst);
 });
