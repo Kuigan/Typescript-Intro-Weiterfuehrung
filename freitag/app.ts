@@ -29,12 +29,14 @@ const obst = document.getElementsByName('obst') as NodeListOf<HTMLInputElement>
 
 const groesse = document.getElementById('groesse') as HTMLSelectElement
 
+const paragraph = document.getElementById('ergebnis') as HTMLParagraphElement
+
 form.addEventListener('submit', (e) => {
   // preventDefault verhindert das automatische
   // neuladen der kompletten Seite
   e.preventDefault()
-  console.log(farbenInput.value)
-  console.log(groesse.value)
+
+
 
   // const obst1 = obst[1] as HTMLInputElement
 
@@ -43,8 +45,8 @@ form.addEventListener('submit', (e) => {
   let angewähltesObst: string[] = []
 
   for (let i = 0; i < obst.length; i = i + 1 /* i++ ODER i += 1 */) {
-    const aktuellesObst = obst[i]
-    console.log(aktuellesObst.value, aktuellesObst.checked)
+    // const aktuellesObst = obst[i]
+    // console.log(aktuellesObst.value, aktuellesObst.checked)
   }
 
   obst.forEach(aktuellesObst => {
@@ -53,7 +55,24 @@ form.addEventListener('submit', (e) => {
     }
   })
 
+  // unsere Eingaben 
+  console.log(farbenInput.value)
+  console.log(groesse.value)
   console.log(angewähltesObst)
+
+  let ergebnis: string = 'Größe: ' + groesse.value + '\n'
+  ergebnis += 'Farbe: ' + farbenInput.value + '\n'
+  ergebnis += 'Obstsorten: ' + angewähltesObst.join(', ') + '\n'
+  ergebnis += 'Anzahl der Obstsorten: ' + angewähltesObst.length
+
+  let marcErgebnis = `
+  Größe: ${groesse.value} <br> \n
+  Farbe: ${farbenInput.value} <br>
+  Obstsorten: ${angewähltesObst.join(', ')} <br>
+  Anzahl: ${angewähltesObst.length}
+  `;
+
+  paragraph.textContent = marcErgebnis
 
 })
 
