@@ -28,3 +28,19 @@ Wenn wir den TS-Compiler anweisen wollen, die TS-Dateien in JS-Dateien umzuwande
 
 In der tsconfig.json können wir die Einstellungen für den TS-Compiler festlegen. So können wir beispielsweise den Output-Ordner festlegen, den Target, den Module, etc.
 Die tsconfig.json kann mittels `tsc --init` erstellt werden.
+
+In den meisten Fällen reicht es aus, die Einstellungen `target`, `module`, `outDir`, `rootDir` und `strict` zu setzen. Als zusätzliche Einstellung empfiehlt es sich die Eigenschaft `include` zu setzen, um den TS-Compiler anzuweisen, welche Dateien er kompilieren soll.
+
+Für `target` empfiehlt sich `es6`, für `module` empfiehlt sich `es2015`, für `outDir` empfiehlt sich `./dist`, für `rootDir` empfiehlt sich `./src` und für `strict` empfiehlt sich `true`. `include` sollte auf `["src/**/*"]` gesetzt werden.
+
+## Module
+
+In Typescript können wir Module verwenden. Ein Modul ist eine Sammlung von Funktionen, Klassen, etc., die wir in anderen Dateien verwenden können. Ein Modul kann exportiert und importiert werden.
+
+Ein Modul wird mittels `export` exportiert und mittels `import` importiert.
+
+Wenn wir Module in unserer html-Datei verwenden wollen, müssen wir die JS-Dateien in die html-Datei einbinden. Das machen wir mittels `<script type="module" src="DATEI.js"></script>`.
+
+## Dateistruktur
+
+Es empfiehlt sich, die Dateien in einem bestimmten Ordner zu strukturieren. In einem Ordner `src` können wir unsere TS-Dateien ablegen. In einem Ordner `dist` können wir unsere JS-Dateien ablegen. In einem Ordner `public` können wir unsere html-Dateien ablegen.
