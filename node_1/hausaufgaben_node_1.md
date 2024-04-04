@@ -1,17 +1,22 @@
 # Node & Typescript Hausaufgaben
 
-### Aufgabe 1: Grundlagen und Theorie (10 Punkte je Frage --> 40 Punkte)
+### Aufgabe 1: Grundlagen und Theorie (10 Punkte je Frage --> 40 Punkte + 20 Punkte optional)
 
 **Ziel**: Beantworte die folgenden Fragen:
 
-- Was ist der Vorteil seinen Code in mehrere Dateien aufzuteilen? Wie können diese Dateien in anderen Dateien verwendet werden?
-- Welche Bedeutung hat Node.js für die Entwicklung von Webanwendungen?
+- Was ist der Vorteil seinen Code in mehrere Dateien aufzuteilen?
+- Wie können diese externen Dateien in anderen Dateien verwendet werden?
 - Wofür wird npm verwendet und wie kann es in einem Projekt genutzt werden?
+- Erkläre mit eigenen Worten, wofür die Einstellung `target`, `module` und `outDir` in der `tsconfig.json` Datei verwendet werden.
+
+Optionale Fragen (weil wir das noch nicht besprochen haben):
+
+- Welche Bedeutung hat Node.js für die Entwicklung von Webanwendungen?
 - Welche Bedeutung hat Node.js in AWS?
 
 ### Aufgabe 2: Praxis: Funktionen (5 Punkte je Frage --> 60 Punkte)
 
-**Ziel**: Lest euch die Dokumentation zu folgenden Funktionen durch und erklärt, was sie tun und wie sie verwendet werden:
+**Ziel**: Lest euch die Dokumentation zu folgenden Funktionen durch und erklärt mit eigenen Worten, was sie tun und wie sie verwendet werden:
 
 - `fs.readdirSync` https://nodejs.org/docs/latest-v20.x/api/fs.html#fsreaddirsyncpath-options
 - `fs.readFileSync` https://nodejs.org/docs/latest-v20.x/api/fs.html#fsreadfilesyncpath-options
